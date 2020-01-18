@@ -18,14 +18,14 @@ public class Main {
 
         int count = 0;
         while (count < 3) {
-            // Guessed once already
+
             if (count == 1) {
                 System.out.println("You have one more guess left!");
             }
             numberUserGuessed = scanner.nextInt();
-            count++; // They tried to guess so raise attempts by 1
+            count++;
             if (numberUserGuessed == 0) {
-                // Asked for help
+
                 System.out.println("Guess a number between 1 and 10 again");
                 numberUserGuessed = scanner.nextInt();
             }
@@ -49,6 +49,6 @@ public class Main {
                 break;
             }
         }
-        // Leave this bottom part empty, we can tell them if they won or lost above inside the while loop
+      
     }
 }
